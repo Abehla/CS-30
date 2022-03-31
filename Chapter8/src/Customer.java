@@ -1,20 +1,21 @@
 
 public class Customer {
 
-	public Customer(String fName, String lName, String str, String city, String st, String zip) {
-		// TODO Auto-generated constructor stub
+	
+public Customer(String bill, String jones, String alvin , String calgary, String alberta, String t1x09a) {
+		
 	}
 private String firstName, lastName, street, city, state, zip;
 		
 	
 
-	public Customer1(String fName, String lName, String str, String c, String s, String z) {
-		firstName = fName;
-		lastName = lName;
-		street = str;
-		city = c;
-		state = s;
-		zip = z;
+	public void Customer1(String bill, String jones , String alvin , String calgary, String alberta, String t1x09a) {
+		firstName = bill;
+		lastName = jones;
+		street = alvin ;
+		city = calgary ;
+		state = alberta;
+		zip = t1x09a;
 	}
 	
 

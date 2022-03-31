@@ -1,19 +1,20 @@
 
-
-
 	import java.text.NumberFormat;
 
 	public class Account 
 	{
 		private double balance;
-		private Customer cust;
-			
+		private Personal per;
+	
 		
 	
-		public Account(double bal, String fName, String lName, String str, String city, String st, String zip) {
+		public Account(double bal, String bill , String jones , String  alvin , String calgary , String alberta , String t1x09a )
+		{
 			balance = bal;
-			cust = new Customer(fName, lName, str, city, st, zip);
+			Customer Personal = new Customer( bill , jones , alvin , calgary , alberta ,t1x09a);
+		
 		}
+		
 		
 
 	
@@ -23,16 +24,16 @@
 
 
 		public void deposit(double amt) {
-		 	balance += amt;
+		 	balance += 650;
 		}
 
 		
 	
 		public void withdrawal(double amt) {
 		 	if (amt <= balance) {
-		 		balance -= amt;
+		 		balance -= 90;
 		 	} else {
-		 		System.out.println("Not enough money in account.");
+		 		System.out.println("insuficent funds");
 		 	}
 		}
 		
@@ -42,8 +43,8 @@
 			String accountString;
 			NumberFormat money = NumberFormat.getCurrencyInstance();
 
-			accountString = cust.toString();
-			accountString += "Current balance is " + money.format(balance);
+			accountString = Customer.toString();
+			accountString += " 700  " + money.format(balance);
 		 	return(accountString);
 		}
 	}
